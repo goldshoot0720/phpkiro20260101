@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安裝指南 - 鋒兒AI資訊系統</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #764ba2;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .step h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #5a67d8;
+        }
+        .btn-success {
+            background: #48bb78;
+        }
+        .btn-success:hover {
+            background: #38a169;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .feature-card {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-robot"></i> 鋒兒AI資訊系統</h1>
+        <p style="text-align: center; font-size: 1.2em; color: #666;">智能管理您的影片和圖片收藏，支援智能分類和快速搜尋</p>
+
+        <h2><i class="fas fa-rocket"></i> 系統功能</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🖼️</div>
+                <h4>圖片庫管理</h4>
+                <p>智能分類和標籤系統</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎬</div>
+                <h4>影片庫管理</h4>
+                <p>影片預覽和播放功能</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🍎</div>
+                <h4>食品管理</h4>
+                <p>到期日期追蹤和提醒</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h4>訂閱管理</h4>
+                <p>自動計算帳單日期</p>
+            </div>
+        </div>
+
+        <h2><i class="fas fa-cog"></i> 安裝步驟</h2>
+
+        <div class="step">
+            <h3>步驟 1: 檢查系統需求</h3>
+            <ul>
+                <li>PHP 7.4 或更高版本</li>
+                <li>MySQL 5.7 或 MariaDB 10.2+</li>
+                <li>Apache 2.4+ 或 Nginx</li>
+                <li>至少 512MB RAM</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>步驟 2: 資料庫設定</h3>
+            <p>系統已自動配置以下資料庫連線：</p>
+            
+            <h4>本地測試環境：</h4>
+            <div class="code-block">
+主機: localhost
+帳號: root
+密碼: (空白)
+資料庫: hsin_php
+            </div>
+
+            <h4>遠端上線環境：</h4>
+            <div class="code-block">
+主機: localhost
+帳號: hsin_php
+密碼: ym0Tagood129
+資料庫: hsin_php
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>步驟 3: 檢查安裝狀態</h3>
+            <p>檢查系統是否已正確安裝：</p>
+            <a href="check-install.php" class="btn">
+                <i class="fas fa-search"></i> 檢查安裝狀態
+            </a>
+        </div>
+
+        <div class="step">
+            <h3>步驟 4: 測試資料庫連線</h3>
+            <p>如果安裝檢查顯示問題，可以測試資料庫連線：</p>
+            <a href="test-db.php" class="btn">
+                <i class="fas fa-database"></i> 測試資料庫連線
+            </a>
+        </div>
+
+        <div class="step">
+            <h3>步驟 5: 執行系統安裝</h3>
+            <p>如果資料庫連線正常但缺少資料表，執行安裝程式：</p>
+            <a href="install.php" class="btn btn-success">
+                <i class="fas fa-play"></i> 開始安裝系統
+            </a>
+        </div>
+
+        <div class="warning">
+            <strong><i class="fas fa-exclamation-triangle"></i> 重要提醒：</strong>
+            <ul>
+                <li>安裝完成後請刪除 <code>install.php</code> 和 <code>test-db.php</code> 檔案</li>
+                <li>請立即修改預設管理員密碼</li>
+                <li>確保 <code>uploads/</code> 目錄有寫入權限</li>
+            </ul>
+        </div>
+
+        <h2><i class="fas fa-user"></i> 預設帳號</h2>
+        <div class="success">
+            <strong>管理員帳號：</strong><br>
+            帳號：<code>admin</code><br>
+            密碼：<code>admin123</code>
+        </div>
+
+        <h2><i class="fas fa-shield-alt"></i> 安全建議</h2>
+        <ul>
+            <li>登入後立即修改預設密碼</li>
+            <li>定期備份資料庫和上傳檔案</li>
+            <li>保持 PHP 和 MySQL 版本更新</li>
+            <li>監控系統日誌檔案</li>
+        </ul>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <p style="color: #666;">鋒兒達習公開資訊 © 版權所有 2025 - 2125</p>
+        </div>
+    </div>
+</body>
+</html>

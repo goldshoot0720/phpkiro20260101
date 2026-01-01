@@ -1,0 +1,44 @@
+# 鋒兒AI資訊系統 - Git 忽略檔案
+
+# 上傳檔案目錄
+public_html/uploads/images/*
+public_html/uploads/videos/*
+!public_html/uploads/images/.gitkeep
+!public_html/uploads/videos/.gitkeep
+
+# 日誌檔案
+public_html/logs/*.log
+!public_html/logs/.gitkeep
+
+# 暫存檔案
+*.tmp
+*.temp
+*.cache
+
+# 系統檔案
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE 檔案
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 備份檔案
+*.bak
+*.backup
+*~
+
+# 敏感設定檔案 (如果有的話)
+config/local.php
+config/production.php
+
+# 統計檔案 (可選)
+public_html/stats/awstats*.txt
+public_html/stats/awstats*.bak
+
+# PHP 錯誤日誌
+php_errors.log
+error_log

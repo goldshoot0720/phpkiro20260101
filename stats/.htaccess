@@ -1,0 +1,4 @@
+AuthUserFile /home/hsin/web/php.tpe12thmayor2038from2025.com/stats/.htpasswd
+AuthName "Web Statistics"
+AuthType Basic
+Require valid-user

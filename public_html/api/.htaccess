@@ -1,0 +1,14 @@
+# API 目錄保護
+Order Allow,Deny
+Allow from all
+
+# 只允許 PHP 檔案
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# 設定 JSON 回應標頭
+<IfModule mod_headers.c>
+    Header set Content-Type "application/json; charset=utf-8"
+</IfModule>

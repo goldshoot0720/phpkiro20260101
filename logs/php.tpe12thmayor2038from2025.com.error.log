@@ -1,0 +1,4 @@
+[Thu Jan 01 12:47:09.348113 2026] [access_compat:error] [pid 3931554:tid 3931594] [client 165.22.235.3:0] AH01797: client denied by server configuration: /home/hsin/web/php.tpe12thmayor2038from2025.com/public_html/server-status
+[Thu Jan 01 12:47:10.347611 2026] [access_compat:error] [pid 3931553:tid 3931563] [client 206.81.24.74:0] AH01797: client denied by server configuration: /home/hsin/web/php.tpe12thmayor2038from2025.com/public_html/server-status
+[Thu Jan 01 12:47:19.352058 2026] [proxy_fcgi:error] [pid 3931554:tid 3931569] [client 165.22.235.3:0] AH01071: Got error 'Primary script unknown'
+[Thu Jan 01 12:47:20.346915 2026] [proxy_fcgi:error] [pid 3931554:tid 3931570] [client 206.81.24.74:0] AH01071: Got error 'Primary script unknown'
