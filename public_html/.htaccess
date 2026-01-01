@@ -3,34 +3,25 @@
 # 啟用 URL 重寫
 RewriteEngine On
 
-# 安全設定
-# 隱藏 Apache 版本資訊
-ServerTokens Prod
-ServerSignature Off
-
 # 防止直接存取敏感檔案
 <FilesMatch "\.(htaccess|htpasswd|ini|log|sh|inc|bak)$">
-    Order Allow,Deny
-    Deny from all
+    Require all denied
 </FilesMatch>
 
 # 防止存取 config 目錄
-<Directory "config">
-    Order Allow,Deny
-    Deny from all
-</Directory>
+<Files "config/*">
+    Require all denied
+</Files>
 
-# 防止存取 includes 目錄
-<Directory "includes">
-    Order Allow,Deny
-    Deny from all
-</Directory>
+# 防止存取 includes 目錄 (但允許 PHP include)
+<Files "includes/*.php">
+    Require all denied
+</Files>
 
 # 防止存取 sql 目錄
-<Directory "sql">
-    Order Allow,Deny
-    Deny from all
-</Directory>
+<Files "sql/*">
+    Require all denied
+</Files>
 
 # 設定預設首頁
 DirectoryIndex index.php index.html
